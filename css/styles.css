@@ -1,0 +1,46 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    /* Primary colors */
+    --verydkblue: hsl(233, 47%, 7%);  /* main bg */
+    --desatblue: hsl(244, 38%, 16%);   /* card bg */
+    --softviolet: hsl(277, 64%, 61%);  /* accent */
+    
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);  /* main heading, stats */
+    --transwhite: hsla(0, 0%, 100%, 0.75);  /* main paragraph */
+    --transwhite2: hsla(0, 0%, 100%, 0.6);   /* stat headings */
+
+    /* fonts */
+    --sans: "Inter", Helvetica, sans-serif;
+    --sans2: "Lexend Deca", Helvetica, sans-serif;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--sans);
+    font-size: 15px;
+    background: var(--verydkblue); 
+    color: var(--white);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    min-height: 100vh;
+}
+main {
+    display: flex;
+}
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
