@@ -26,20 +26,34 @@ body {
     font-family: var(--sans);
     font-size: 15px;
     background: var(--verydkblue); 
-    color: var(--white);
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; 
-    min-height: 100vh;
+    color: var(--white); 
 }
 main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.component {
     display: flex;
+    border-radius: 1rem;
+    background-color: var(--softviolet);
+}
+.image>img {
+    display: block;
 }
 /* footer */
+footer {
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+}
 .attribution {
     font-size: 11px;
-    text-align: center;
+    color: var(--white);
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
